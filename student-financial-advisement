@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About – Ciela Miguel Initiative</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>About the Initiative / Sobre a Iniciativa</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="start.html">Start Now</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>🇬🇧 About the Initiative</h2>
+    <p>This project was born out of my passion for economics, finance, and entrepreneurship. I am Ciela Miguel, a 19-year-old Angolan student who has personally built and managed five different businesses — in transportation, money lending, cosmetics, importation, and education.</p>
+
+    <p>Through this journey, I’ve learned what works and what doesn’t when growing a small business. Now I’m using this free initiative to share those lessons with other young entrepreneurs and microbusiness owners who want to thrive with limited resources.</p>
+
+    <p>I’ve helped other businesses increase their sales — some up to 50% — by improving their marketing strategies, managing finances better, and understanding their customers. My goal is to guide more entrepreneurs to success, especially those who are just starting out or struggling to grow.</p>
+
+    <h3>Our Objectives</h3>
+    <ul>
+      <li>Grow your business with proven strategies</li>
+      <li>Attract and retain the right customers</li>
+      <li>Maximize your profits with smart financial planning</li>
+      <li>Improve your brand image and credibility</li>
+      <li>Offer tools and insights for long-term success</li>
+      <li>All completely free — driven by real experience</li>
+    </ul>
+
+    <hr>
+
+    <h2>🇵🇹 Sobre a Iniciativa</h2>
+    <p>Este projeto nasceu da minha paixão por economia, finanças e empreendedorismo. Eu sou Ciela Miguel, uma estudante angolana de 19 anos que já criou e geriu cinco negócios diferentes — nas áreas de transporte, empréstimo de dinheiro, cosméticos, importação e educação.</p>
+
+    <p>Ao longo dessa jornada, aprendi o que realmente funciona na hora de crescer um pequeno negócio. Agora estou a partilhar esse conhecimento, gratuitamente, com jovens empreendedores e pequenos empresários que desejam crescer mesmo com poucos recursos.</p>
+
+    <p>Já ajudei outros negócios a aumentarem suas vendas — alguns até 50% — com melhores estratégias de marketing, finanças organizadas e foco no cliente. Quero orientar mais empreendedores para o sucesso, especialmente os que estão começando ou passando dificuldades.</p>
+
+    <h3>Objetivos da Página</h3>
+    <ul>
+      <li>Crescer o seu negócio com estratégias comprovadas</li>
+      <li>Atrair e fidelizar clientes certos</li>
+      <li>Maximizar lucros com boa gestão financeira</li>
+      <li>Melhorar imagem e credibilidade da sua marca</li>
+      <li>Fornecer ferramentas e ideias para crescimento sustentável</li>
+      <li>Totalmente gratuito — baseado em experiências reais</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Ciela Miguel – Empowering Micro Businesses</p>
+  </footer>
+</body>
+</html>
+import os
+from zipfile import ZipFile
+
+project_name = "Ciela_Miguel_Website"
+folders = [
+    project_name,
+    f"{project_name}/images"
+]
+
+for folder in folders:
+    os.makedirs(folder, exist_ok=True)
+
+# File contents
+files = {
+    f"{project_name}/index.html": """<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ciela Miguel – Free Business Support</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Ciela Miguel’s Free Initiative</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="start.html">Start Now</a>
+    </nav>
+  </header>
+  <section id="intro">
+    <h2>Welcome</h2>
+    <img src="images/ciela-profile.jpg" alt="Ciela Miguel" width="200">
+    <p>Hello! I'm <strong>Ciela Miguel</strong>, a 19‑year‑old student from Angola fascinated by economics, finance, accounting, business, and marketing.</p>
+    <p>I’ve created and run 5 businesses across different sectors — transportation, lending, cosmetics, import, and education. This website is a free initiative based on my experience, created to help small businesses and micro-entrepreneurs grow and thrive.</p>
+    <p>My mission is to share what I’ve learned to help others build better strategies, maximize profits, and attract customers — all without needing a big budget.</p>
+  </section>
+  <footer>
+    <p>© 2025 Ciela Miguel – Apoio gratuito a pequenas empresas</p>
+  </footer>
+</body>
+</html>
+""",
+    f"{project_name}/about.html": """<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About – Ciela Miguel Initiative</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>About the Initiative / Sobre a Iniciativa</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="start.html">Start Now</a>
+    </nav>
+  </header>
+  <section>
+    <h2>🇬🇧 About the Initiative</h2>
+    <p>This project was born out of my passion for economics, finance, and entrepreneurship...</p>
+    <h3>📜 Certificate of Excellence</h3>
+    <img src="images/certificate.jpg" alt="Certificate of Excellence" width="300">
+    <p>This certificate recognizes my passion and performance in business studies...</p>
+  </section>
+  <footer>
+    <p>© 2025 Ciela Miguel – Empowering Micro Businesses</p>
+  </footer>
+</body>
+</html>
+""",
+    f"{project_name}/start.html": """<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Start Now – Ciela Miguel Initiative</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Start Now</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="start.html">Start Now</a>
+    </nav>
+  </header>
+  <section>
+    <h2>Comece Agora</h2>
+    <form id="startForm">
+      <label>Nome: <input type="text" required></label><br>
+      <label>País: <input type="text" required></label><br>
+      <label>Tipo de negócio: <input type="text" required></label><br>
+      <label>Contacto: <input type="text" required></label><br>
+      <button type="submit">Enviar</button>
+    </form>
+    <div id="thankYou" style="display:none;">
+      <h3>Obrigado!</h3>
+      <p>Você será contactado dentro de 24 horas...</p>
+    </div>
+  </section>
+  <script>
+    document.getElementById('startForm').addEventListener('submit', e => {
+      e.preventDefault();
+      document.getElementById('startForm').style.display = 'none';
+      document.getElementById('thankYou').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
+""",
+    f"{project_name}/styles.css": """body { background: white; color: #4b0082; font-family: sans-serif; margin: 0; }
+header { background: #4b0082; color: white; padding: 1rem; text-align: center; }
+nav a { color: white; margin: 0 1rem; text-decoration: none; }
+section { padding: 2rem; max-width: 800px; margin: auto; }
+img { border-radius: 8px; margin: 1rem 0; }
+button { background: #4b0082; color: white; padding: 0.5rem 1rem; border: none; cursor: pointer; }
+button:hover { opacity: 0.9; }"""
+}
+
+# Write all files
+for path, content in files.items():
+    with open(path, "w") as f:
+        f.write(content)
+
+# Create zip
+with ZipFile(f"{project_name}.zip", "w") as zipf:
+    for folder_name, _, filenames in os.walk(project_name):
+        for filename in filenames:
+            file_path = os.path.join(folder_name, filename)
+            zipf.write(file_path, arcname=os.path.relpath(file_path, project_name))
+
